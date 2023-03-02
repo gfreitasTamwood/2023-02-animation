@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+figure {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    height: 30vh;
+    width: 50%;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    width: 3vh;
+    height: 3vh;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0,100,100,.7);
+    transition: .6s;
+}
+
+figcaption > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3vh;
+    transition: .6s;
+}
+
+aside {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    column-gap: 5vh;
+}
+
+figure:hover figcaption {
+    height: 100%;
+}
